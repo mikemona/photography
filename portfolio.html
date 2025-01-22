@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/main.css" media="all" />
+    <script
+      src="https://kit.fontawesome.com/3d4c699bd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.0.0-beta.4/dist/tesseract.min.js"></script>
+
+    <title>Ingredient Checker</title>
+  </head>
+  <body class="">
+    <main class="main">
+      <header class="header">
+        <div class="nav-container" id="contact"></div>
+      </header>
+      <div class="body">
+        <div class="body__header">
+          <div class="body__header-title">
+            Timeless Images for Those Who Appreciate Style, Sophistication, and
+            Uniqueness
+          </div>
+          <div class="body__header-description">
+            <p>
+              My approach to photography is distinctive and heartfelt. Blending
+              creativity with authenticity, I capture your moments in a way that
+              reflects your story—photographs meant to be treasured for a
+              lifetime.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="section">
+          <div class="section__header">
+            <div class="section__header-title">Genres</div>
+          </div>
+          <div class="section__content-scrollable">
+            <div class="card">
+              <div class="card-title">Instrumentals</div>
+            </div>
+            <div class="card">
+              <div class="card-title">Hip-Hop</div>
+            </div>
+            <div class="card">
+              <div class="card-title">Jazz & Soul</div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="section">
+          <div class="section__header">
+            <div class="section__header-title">Genres</div>
+          </div>
+          <div class="section__content-grid">
+            <div class="card">
+              <div class="card-title">Instrumentals</div>
+            </div>
+            <div class="card">
+              <div class="card-title">Hip-Hop</div>
+            </div>
+            <div class="card">
+              <div class="card-title">Jazz & Soul</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-gallery"></div>
+
+        <!-- <div class="accordion-item">
+          <div role="button" class="accordion-item__header">
+            <div class="accordion-item__header-title">Section 1</div>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="accordion-item__content">
+            <p>Content for section 1.</p>
+          </div>
+        </div> -->
+
+        <!-- <div class="accordion-item">
+          <div role="button" class="accordion-item__header">
+            <div class="accordion-item__header-title">
+              Section 2 Has a Much Longer Title
+            </div>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="accordion-item__content">
+            <p>Content for section 1.</p>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    <div class="drawer-overlay" id="navDrawer">
+      <div class="drawer drawer--nav" id="drawer">
+        <div class="drawer-header">
+          <a href="profile.html" class="drawer-header__profile">
+            <div class="drawer-header__img">
+              <img src="/img/person5.jpg" alt="Person" />
+            </div>
+            <div class="drawer-header__title">
+              Drawer 1
+              <div class="drawer-header__description">124</div>
+            </div>
+          </a>
+          <button class="drawer-header__close" data-drawer-close>
+            &times;
+          </button>
+        </div>
+        <div class="drawer-body">
+          <div class="menu">
+            <a href="plans.html" class="menu-item">Plans</a>
+            <a href="settings.html" class="menu-item">Settings</a>
+            <div class="divider"></div>
+            <a href="login.html" class="menu-item">Log Out</a>
+          </div>
+        </div>
+        <div class="drawer-footer">
+          <button class="btn btn-link" id="cancelDrawer" data-drawer-close>
+            Cancel
+          </button>
+          <button class="btn btn-primary" id="saveDrawer">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawer1">
+      <div class="drawer" id="drawer">
+        <div class="drawer-header">
+          <h2 class="drawer-header__title">Drawer 1</h2>
+          <button class="drawer-header__close" data-drawer-close>
+            &times;
+          </button>
+        </div>
+        <div class="drawer-body">
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Default input"
+                    aria-label="default input example"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-footer">
+          <button class="btn btn-link" id="cancelDrawer" data-drawer-close>
+            Cancel
+          </button>
+          <button class="btn btn-primary" id="saveDrawer">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawer2">
+      <div class="drawer" id="drawer">
+        <div class="drawer-header">
+          <h2 class="drawer-header__title">Drawer 2</h2>
+          <button
+            class="drawer-header__close"
+            id="closeDrawer"
+            data-drawer-close
+          >
+            &times;
+          </button>
+        </div>
+        <div class="drawer-body">
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Default input"
+                    aria-label="default input example"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-footer">
+          <button class="btn btn-link" id="cancelDrawer" data-drawer-close>
+            Cancel
+          </button>
+          <button class="btn btn-primary" id="saveDrawer">Save</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/accordion.js"></script>
+  <script src="js/drawer.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/portfolio.js"></script>
+</html>

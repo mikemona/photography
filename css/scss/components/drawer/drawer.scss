@@ -1,0 +1,332 @@
+.drawer {
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-overlay);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 9999;
+
+    &.open {
+      visibility: visible;
+      opacity: 1;
+
+      .drawer {
+        transform: translateY(0);
+      }
+    }
+
+    .drawer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      min-height: 60vh;
+      max-height: 90vh; // Ensures the drawer cannot grow beyond this
+      background-color: var(--dark);
+      border-radius: 16px 16px 0 0;
+      box-shadow: 0 -4px 10px var(--bg-overlay);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease-in-out;
+      transform: translateY(100%);
+
+      &-header {
+        padding: 16px;
+        flex-shrink: 0; // Prevents the header from shrinking
+        display: flex;
+        align-items: center;
+
+        &__title {
+          color: var(--text-white);
+          display: flex;
+          flex-direction: column;
+          font-size: 18px;
+          font-weight: bold;
+          width: 100%;
+          margin: 0;
+          gap: 4px;
+        }
+
+        &__description {
+          font-size: 12px;
+          font-weight: 400;
+          color: var(--text-info);
+        }
+
+        &__img {
+          width: 40px;
+          min-width: 40px;
+          height: 40px;
+          border-radius: 50%; // Makes the div circular
+          overflow: hidden; // Ensures the image stays within the circle
+          display: flex; // Flexbox to center the image
+          align-items: center;
+          justify-content: center;
+          margin-right: 16px;
+          img {
+            width: 100%; // Makes the image fill the div
+            height: 100%; // Ensures the image covers the entire div
+            object-fit: cover; // Ensures the image maintains aspect ratio and fills the circle
+          }
+        }
+
+        &__profile {
+          display: flex;
+          align-items: center;
+          width: 100%;
+        }
+
+        &__close {
+          background: none;
+          border: none;
+          font-size: 24px;
+          cursor: pointer;
+          color: var(--primary-ghost);
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            color: var(--primary-ghost-hover);
+          }
+        }
+      }
+
+      &-body {
+        padding: 16px;
+        flex: 1; // Allows the body to take up remaining space
+        overflow-y: auto; // Enables scrolling if content exceeds available height
+        font-size: 14px;
+
+        .settings-row {
+          padding: 0;
+
+          &:first-of-type {
+            border-radius: 0;
+          }
+
+          &:last-of-type {
+            border-bottom: none;
+            border-radius: 0;
+
+            .settings-row__body {
+              border-bottom: none;
+            }
+          }
+
+          &:only-of-type {
+            border-radius: 0;
+          }
+        }
+
+        .settings-row__body.settings-row__body--vert {
+          padding: 0;
+
+          .settings-row__body-left {
+            padding: 16px 0;
+          }
+
+          .settings-row__body-input {
+            padding: 16px 0;
+          }
+        }
+      }
+
+      &-footer {
+        padding: 16px;
+        flex-shrink: 0; // Prevents the footer from shrinking
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+
+        .btn {
+          width: 100%;
+        }
+      }
+
+      &--nav {
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        width: 90%;
+        min-height: 100%;
+        max-height: 100%;
+        padding-top: 14px;
+        background-color: var(--dark);
+        border-radius: 16px 0 0 16px;
+        box-shadow: 0 -4px 10px var(--bg-overlay);
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(100%);
+
+        &-header {
+          padding: 16px;
+          flex-shrink: 0; // Prevents the header from shrinking
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+          }
+
+          &__close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--primary-ghost);
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+              color: var(--primary-ghost-hover);
+            }
+          }
+        }
+
+        &-body {
+          padding: 16px;
+          flex: 1; // Allows the body to take up remaining space
+          overflow-y: auto; // Enables scrolling if content exceeds available height
+          font-size: 14px;
+        }
+
+        &-footer {
+          padding: 16px;
+          flex-shrink: 0; // Prevents the footer from shrinking
+          display: flex;
+          justify-content: space-between;
+          gap: 8px;
+
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+
+      &--song {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        max-height: 100%; // Ensures the drawer cannot grow beyond this
+        background-color: var(--bg-dark);
+        border-radius: 16px 16px 0 0;
+        box-shadow: 0 -4px 10px var(--bg-overlay);
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+        transform: translateY(100%);
+
+        .drawer {
+          &-header {
+            padding: 16px;
+            flex-shrink: 0; // Prevents the header from shrinking
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__title {
+              font-size: 14px;
+              font-weight: 500;
+              margin: 0;
+              text-align: center !important;
+            }
+
+            &__close {
+              background: none;
+              border: none;
+              font-size: 16px;
+              cursor: pointer;
+              color: var(--primary-ghost);
+              transition: all 0.2s ease-in-out;
+
+              &:hover {
+                color: var(--primary-ghost-hover);
+              }
+            }
+          }
+
+          &-body {
+            padding: 16px;
+            flex: 1; // Allows the body to take up remaining space
+            overflow-y: auto; // Enables scrolling if content exceeds available height
+            font-size: 14px;
+
+            &__song {
+              max-width: 100%;
+              &-cover {
+                width: 100%;
+                max-width: 500px;
+                border-radius: var(--border-radius);
+                padding: 24px 0;
+                img {
+                  width: 100%;
+                  aspect-ratio: 1/1;
+                  object-fit: cover;
+                  border-radius: var(--border-radius);
+                }
+              }
+
+              &-details {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                width: 100%;
+              }
+
+              &-title {
+                font-size: 22px;
+                color: var(--text-white);
+                font-weight: bold;
+                margin: 0;
+              }
+
+              &-artist {
+                font-size: 16px;
+                color: var(--text-info);
+                margin: 0;
+              }
+
+              &-progress {
+                display: flex;
+                align-items: center;
+                height: 4px;
+                border-radius: 50px;
+                margin: 24px 0;
+                background: var(--dark);
+                transition: width 0.3s ease;
+                width: 100%;
+              }
+
+              &-actions {
+                display: flex;
+                justify-content: space-between;
+              }
+            }
+          }
+
+          &-footer {
+            padding: 16px;
+            flex-shrink: 0; // Prevents the footer from shrinking
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+
+            .btn {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

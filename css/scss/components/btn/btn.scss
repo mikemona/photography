@@ -1,0 +1,178 @@
+.btn {
+  font-family: "Quicksand";
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  min-width: 40px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  padding: 4px 16px;
+  border: none;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, 0.2s ease-in-out;
+
+  &-primary {
+    font-weight: 700;
+    background-color: var(--primary);
+    color: var(--text-dark);
+
+    &:hover {
+      background-color: var(--primary-hover);
+      color: var(--text-dark);
+    }
+
+    &:focus {
+      background-color: var(--primary-focus);
+      color: var(--text-dark);
+      box-shadow: var(--focus-shadow);
+    }
+  }
+
+  &-accent {
+    font-weight: 700;
+    background-color: var(--accent);
+    color: var(--text-dark);
+
+    &:hover {
+      background-color: var(--accent-hover);
+      color: var(--text-dark);
+    }
+
+    &:focus {
+      background-color: var(--accent-focus);
+      color: var(--text-dark);
+      box-shadow: var(--focus-shadow);
+    }
+  }
+
+  &-ghost {
+    font-weight: 500;
+    background-color: var(--primary-ghost);
+    color: var(--text-white);
+
+    &:hover {
+      background-color: var(--primary-ghost-hover);
+      color: var(--text-white);
+    }
+
+    &:focus {
+      background-color: var(--primary-ghost-focus);
+      color: var(--text-white);
+      box-shadow: var(--focus-shadow);
+    }
+  }
+
+  &-link {
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--primary);
+    padding: 4px 4px;
+
+    &:hover {
+      color: var(--primary-hover);
+    }
+
+    &:focus {
+      color: var(--primary-focus);
+      box-shadow: var(--focus-shadow);
+    }
+  }
+
+  &-text {
+    background-color: transparent;
+    color: var(--primary);
+    padding: 0 4px;
+    max-width: fit-content;
+
+    &:hover {
+      color: var(--primary-hover);
+    }
+
+    &:focus {
+      color: var(--primary-focus);
+      box-shadow: var(--focus-shadow);
+    }
+  }
+
+  &-searchbar {
+    font-weight: 300;
+    background-color: var(--primary-ghost);
+    color: var(--text-white);
+    justify-content: flex-start;
+  }
+
+  &-check {
+    display: flex;
+    input {
+      display: none;
+    }
+
+    label {
+      background-color: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      transition: background-color 0.3s ease, color 0.3s ease,
+        border-color 0.3s ease;
+
+      &:hover {
+        color: var(--primary);
+        background-color: var(--primary-ghost-hover);
+      }
+    }
+
+    // Style the label when the input is checked
+    input:checked + label {
+      background-color: var(
+        --primary
+      ); // Change to your desired checked background color
+      color: var(--text-dark);
+
+      &:hover {
+        background-color: var(--primary-hover);
+        color: var(--text-dark);
+      }
+    }
+  }
+
+  &.backBTN {
+    background-color: transparent;
+    color: var(--primary);
+    padding: 4px 2px;
+    min-width: unset !important;
+
+    &:hover {
+      color: var(--primary-hover);
+    }
+
+    &:focus {
+      color: var(--primary-focus);
+      box-shadow: none;
+    }
+  }
+}
+
+a {
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 8px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

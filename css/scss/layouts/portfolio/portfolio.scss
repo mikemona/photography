@@ -1,0 +1,11 @@
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between images */
+
+  img {
+    width: 33%; /* Three images per row */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing around images */
+  }
+}
