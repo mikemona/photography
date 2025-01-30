@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-ghost);
+  color: var(--text-white);
+  width: 100%;
+  padding: 16px;
+  flex: 0 0 auto;
+}
+.card__content-number {
+  font-family: "Mallorga", serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.card__content-title {
+  font-family: "Mallorga", serif;
+  font-size: 32px; /* Adjust headline size */
+  margin-bottom: 8px;
+}
+.card__content-description {
+  font-size: 16px;
+}
+.card--sm {
+  height: 80px;
+}
+.card--xl {
+  height: 160px;
+}
+.card--spotlight {
+  height: 120px;
+}
+.card--info {
+  padding: 0px;
+  background-color: transparent;
+  color: var(--text-dark);
+}/*# sourceMappingURL=card.css.map */

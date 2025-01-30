@@ -1,0 +1,336 @@
+.section {
+  width: 100%;
+  padding: 32px 0;
+}
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 0 16px;
+}
+.section__header-title {
+  font-family: "Mallorga", serif;
+  font-size: 32px; /* Adjust headline size */
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
+.section__header-subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.section__content {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+.section__content-scrollable {
+  display: flex;
+  padding: 0 16px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 24px;
+}
+.section__content-scrollable .card {
+  width: 475px;
+  height: 100%;
+}
+.section__content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0 16px;
+}
+.section__content-grid .card-title {
+  font-size: 14px;
+}
+.section-gallery {
+  width: 100%;
+  padding: 16px;
+}
+.section-hero {
+  position: relative; /* Allows positioning of child elements */
+  width: 100%; /* Full width of the page */
+  height: 800px;
+  padding: 16px;
+  background-size: cover; /* Make sure the image covers the entire section */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+  background-repeat: no-repeat; /* Prevent repeating of the image */
+  overflow: hidden; /* Ensures no child element overflows */
+}
+.section-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Creates a dark overlay */
+  z-index: 1; /* Keeps the overlay above the background image */
+}
+.section-hero__content {
+  position: relative; /* Needed for z-index to work */
+  z-index: 2; /* Keeps content above the overlay */
+  color: #fff; /* White text for contrast */
+  text-align: center; /* Center the text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.section-hero__content-title {
+  font-family: "Mallorga", serif;
+  font-size: 32px; /* Adjust headline size */
+  margin-bottom: 24px;
+}
+.section-hero__content p {
+  font-size: 14px;
+}
+.section-banner {
+  position: relative; /* Allows positioning of child elements */
+  width: 100%; /* Full width of the page */
+  height: 400px;
+  padding: 16px;
+  background-size: cover; /* Make sure the image covers the entire section */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+  background-repeat: no-repeat; /* Prevent repeating of the image */
+  overflow: hidden; /* Ensures no child element overflows */
+}
+.section-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Creates a dark overlay */
+  z-index: 1; /* Keeps the overlay above the background image */
+}
+.section-banner__content {
+  position: relative; /* Needed for z-index to work */
+  z-index: 2; /* Keeps content above the overlay */
+  color: #fff; /* White text for contrast */
+  text-align: center; /* Center the text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.section-banner__content-title {
+  font-family: "Mallorga", serif;
+  font-size: 32px; /* Adjust headline size */
+  margin-bottom: 24px;
+}
+.section-banner__content p {
+  font-size: 14px;
+}
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 32px 16px;
+}
+.section-content__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+.section-content__title {
+  font-family: "Mallorga", serif;
+  font-size: 32px; /* Adjust headline size */
+  margin-bottom: 8px;
+}
+.section-content__subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+}
+.section-content__description {
+  font-size: 16px;
+  color: var(--text-dark);
+}
+.section-content__cta {
+  width: 100%;
+}
+.section-content__cta .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-content__image {
+  flex: 1;
+  text-align: center;
+}
+.section-content__image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+}
+.section-content--full {
+  background-color: var(--off-white);
+  width: 100%;
+  padding: 0;
+}
+.section-content--full .section-content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+  padding: 32px 16px;
+}
+.section-content--full .section-content__title {
+  font-family: "Mallorga", serif;
+  font-size: 48px; /* Adjust headline size */
+  margin-bottom: 8px;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+  color: var(--primary);
+}
+.section-content--full .section-content__subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+.section-content--full .section-content__description {
+  font-size: 16px;
+  color: var(--text-dark);
+  max-width: 600px;
+  text-align: left;
+}
+.section-content--full .section-content__cta {
+  width: 100%;
+  max-width: 600px;
+}
+.section-content--full .section-content__cta .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-content--full .section-content__image {
+  flex: 1;
+  text-align: right;
+  max-width: 40%;
+}
+.section-content--full .section-content__image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 1000px;
+}
+.section-testimonial {
+  width: 100%; /* Full width of the page */
+  padding: 60px 16px;
+  text-align: center; /* Center the text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.section-testimonial--accent {
+  background-color: var(--off-white);
+}
+.section-testimonial__quote {
+  color: var(--text-dark); /* White text for contrast */
+  justify-content: center;
+  font-family: "Mallorga", serif;
+  font-size: 32px; /* Adjust headline size */
+}
+.section-testimonial__quote-client {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .section-hero {
+    height: 600px;
+    background-position: top right -250px; /* Center the image */
+  }
+  .section__content-scrollable {
+    gap: 24px;
+  }
+  .section__content-scrollable .card {
+    width: 80%;
+  }
+  .section__content-scrollable .card__content-title {
+    font-size: 24px;
+  }
+  .section__content-scrollable .card__content-description {
+    font-size: 14px;
+  }
+  .section-content {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-content__text {
+    max-width: 400px;
+    width: 100%;
+  }
+  .section-content__subtitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .section-content__description {
+    font-size: 14px;
+  }
+  .section-content__cta {
+    display: flex;
+    justify-content: center;
+  }
+  .section-content__cta .btn {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .section-content__image {
+    width: 100%;
+    height: 100%;
+  }
+  .section-content--full .section-content__text {
+    max-width: 400px;
+    width: 100%;
+    padding: 32px 16px 24px;
+  }
+  .section-content--full .section-content__title {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: var(--primary);
+  }
+  .section-content--full .section-content__subtitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+  .section-content--full .section-content__description {
+    font-size: 14px;
+    text-align: center;
+  }
+  .section-content--full .section-content__image {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    max-width: unset;
+  }
+  .section-content--full .section-content__image img {
+    max-width: 100%;
+    height: 100%;
+    max-height: unset;
+  }
+}/*# sourceMappingURL=section.css.map */

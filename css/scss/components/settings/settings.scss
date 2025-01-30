@@ -1,0 +1,292 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+
+  &-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary);
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 16px;
+    min-height: 50px;
+    background-color: var(--dark);
+    color: var(--text-white);
+    cursor: pointer;
+
+    .form-check-input {
+      align-content: center;
+      margin: 0 16px 0 0;
+      width: 16px;
+      height: 16px;
+    }
+
+    i {
+      height: 100%;
+      align-content: center;
+      color: var(--primary);
+      margin-right: 16px;
+    }
+
+    &__body {
+      display: flex;
+      width: 100%;
+      // align-items: center;
+      border-bottom: 1px solid var(--border);
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 8px 16px 0;
+        gap: 8px;
+        width: 100%;
+        height: auto;
+
+        &_title {
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        &_description {
+          font-size: 12px;
+          color: var(--text-info);
+          display: -webkit-box; /* Required for -webkit-line-clamp */
+          -webkit-line-clamp: 2; /* Limit text to 2 lines */
+          -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+          overflow: hidden; /* Hide overflowing text */
+          text-overflow: ellipsis; /* Add "..." to indicate truncation */
+        }
+      }
+
+      &-info {
+        display: flex;
+        text-align: right;
+        height: unset;
+        color: var(--primary-ghost-hover);
+        font-size: 14px;
+        gap: 8px;
+        align-items: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        i {
+          height: 100%;
+          margin-right: 0;
+          align-content: center;
+          color: var(--primary-ghost-hover);
+
+          &.active {
+            color: var(--blue);
+          }
+        }
+      }
+
+      &-input {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        text-align: right;
+        min-height: 50px;
+        height: unset;
+        font-size: 14px;
+        padding: 16px;
+        gap: 8px;
+
+        .btn-link {
+          height: 100%;
+          margin-right: 0;
+          align-content: center;
+          color: var(--primary);
+          min-width: 0;
+          padding: 0;
+        }
+
+        i {
+          height: 100%;
+          margin-right: 0;
+          align-content: center;
+          color: var(--primary);
+        }
+
+        .form-element {
+          margin: 0;
+        }
+      }
+
+      &--vert {
+        flex-direction: column;
+      }
+    }
+
+    i {
+      height: 100%;
+      align-content: center;
+      color: var(--primary);
+    }
+
+    &:first-of-type {
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+      .settings-row__body {
+        border-bottom: none;
+      }
+    }
+
+    &:only-of-type {
+      border-radius: var(--border-radius);
+    }
+  }
+
+  &-button {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 16px;
+    min-height: 50px;
+    background-color: var(--dark);
+    color: var(--text-white);
+    cursor: pointer;
+
+    .form-check-input {
+      align-content: center;
+      margin: 0 16px 0 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    i {
+      height: 100%;
+      align-content: center;
+      color: var(--primary);
+      margin-right: 16px;
+    }
+
+    &__body {
+      display: flex;
+      width: 100%;
+      // align-items: center;
+      border-bottom: 1px solid var(--border);
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 8px 16px 0;
+        gap: 8px;
+        width: 100%;
+        height: auto;
+
+        &_title {
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        &_description {
+          font-size: 12px;
+          color: var(--text-info);
+          display: -webkit-box; /* Required for -webkit-line-clamp */
+          -webkit-line-clamp: 2; /* Limit text to 2 lines */
+          -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+          overflow: hidden; /* Hide overflowing text */
+          text-overflow: ellipsis; /* Add "..." to indicate truncation */
+        }
+      }
+
+      &-info {
+        display: flex;
+        text-align: right;
+        height: unset;
+        color: var(--primary-ghost-hover);
+        font-size: 14px;
+        gap: 8px;
+        align-items: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        i {
+          height: 100%;
+          margin-right: 0;
+          align-content: center;
+          color: var(--primary-ghost-hover);
+
+          &.active {
+            color: var(--blue);
+          }
+        }
+      }
+
+      &-input {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        text-align: right;
+        min-height: 50px;
+        height: unset;
+        font-size: 14px;
+        padding: 16px;
+        gap: 8px;
+
+        .btn-link {
+          height: 100%;
+          margin-right: 0;
+          align-content: center;
+          color: var(--primary);
+          min-width: 0;
+          padding: 0;
+        }
+
+        i {
+          height: 100%;
+          margin-right: 0;
+          align-content: center;
+          color: var(--primary);
+        }
+
+        &.top {
+          i {
+            height: unset;
+            margin: 2px 0 0 0;
+            color: var(--primary);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      background-color: var(--dark-hover);
+    }
+
+    &:focus {
+      background-color: var(--dark-focus);
+    }
+
+    &:first-of-type {
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+      .settings-button__body {
+        border-bottom: none;
+      }
+    }
+  }
+}

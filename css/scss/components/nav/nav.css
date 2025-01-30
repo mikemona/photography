@@ -1,0 +1,147 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: color 1s ease;
+  color: var(--text-dark);
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover {
+  color: var(--text-dark);
+  opacity: 80%;
+}
+.nav-link:focus:not(.active) {
+  opacity: 100%;
+  color: var(--primary-focus);
+}
+.nav-link.active {
+  color: var(--primary);
+  font-weight: 500;
+  opacity: 100%;
+  transform: scale(1.1);
+  transition: color 1s ease;
+}
+.nav-link.active:focus {
+  transition: all 0.6s ease-in-out;
+}
+.nav-link-title {
+  font-family: "Mallorga", serif;
+  opacity: 100%;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+.nav-link-logo {
+  opacity: 100%;
+}
+.nav-link-logo img {
+  height: 50px;
+  width: auto;
+}
+.nav__toggle {
+  display: none; /* Initially hidden until nav fades */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: var(--text-dark);
+  background-color: rgba(255, 255, 255, 0.2117647059);
+  border-radius: var(--btn-border-radius);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.nav__toggle:hover {
+  color: var(--text-dark-placeholder);
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 1s ease;
+  color: var(--text-dark);
+}
+.menu-item:hover {
+  color: var(--primary-hover);
+  opacity: 80%;
+  transition: all 0.3s ease-in-out;
+}
+.menu-item:focus:not(.active) {
+  opacity: 100%;
+  color: var(--primary-focus);
+}
+.menu-item.active {
+  color: var(--text-white);
+  opacity: 100%;
+  transform: scale(1.1);
+  transition: color 1s ease;
+  text-shadow: 1px 1px 2px var(--bg-dark), 0 0 25px var(--primary), 0 0 5px var(--primary-ghost);
+}
+.menu-item.active:focus {
+  transition: all 0.6s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none; /* Hide desktop nav on small screens */
+  }
+  .nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+  .nav-mobile__toggle {
+    color: var(--text-dark);
+    mix-blend-mode: difference; /* Creates the inversion effect */
+    background-color: rgba(255, 255, 255, 0.2117647059);
+    border-radius: var(--btn-border-radius);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .nav-mobile__toggle:hover {
+    color: var(--text-dark-placeholder);
+  }
+}/*# sourceMappingURL=nav.css.map */

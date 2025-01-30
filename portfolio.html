@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/main.css" media="all" />
+    <script
+      src="https://kit.fontawesome.com/3d4c699bd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.0.0-beta.4/dist/tesseract.min.js"></script>
+
+    <title>Mike Mona Photography - Portfolio</title>
+  </head>
+  <body class="">
+    <main class="main">
+      <div class="nav-container" id="portfolio"></div>
+      <div class="body">
+        <div class="body__header">
+          <div class="body__header-title">
+            Timeless Images for Those Who Appreciate Style, Sophistication, and
+            Uniqueness
+          </div>
+          <div class="body__header-description">
+            <p>
+              My approach to photography is distinctive and heartfelt. Blending
+              creativity with authenticity, I capture your moments in a way that
+              reflects your story—photographs meant to be treasured for a
+              lifetime.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-gallery">
+          <div class="portfolio-gallery"></div>
+        </div>
+
+        <divs
+          class="section-banner"
+          style="background-image: url(img/portfolio/Pybus-3.jpg)"
+        >
+          <div class="section-banner__content">
+            <div class="section-banner__content-title">
+              Ready to create something <em>beautiful</em> ?
+            </div>
+            <a href="contact.html" class="btn btn-outline-white">Get started</a>
+          </div>
+        </div>
+
+        <div class="section-testimonial">
+          <div class="section-testimonial__quote">
+            "This is a great quote about how good I am"
+          </div>
+
+          <div class="section-testimonial__quote-client">~ Steve + Katie</div>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+    </main>
+    <div class="modal-image" id="imageModal">
+      <button class="modal-close" id="modalClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="" />
+      </div>
+      <button class="arrow left-arrow" id="leftArrow">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="arrow right-arrow" id="rightArrow">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div class="drawer-overlay" id="drawer1">
+      <div class="drawer" id="drawer">
+        <div class="drawer-header">
+          <h2 class="drawer-header__title">Drawer 1</h2>
+          <button class="drawer-header__close" data-drawer-close>
+            &times;
+          </button>
+        </div>
+        <div class="drawer-body">
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Default input"
+                    aria-label="default input example"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-footer">
+          <button class="btn btn-link" id="cancelDrawer" data-drawer-close>
+            Cancel
+          </button>
+          <button class="btn btn-primary" id="saveDrawer">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawer2">
+      <div class="drawer" id="drawer">
+        <div class="drawer-header">
+          <h2 class="drawer-header__title">Drawer 2</h2>
+          <button
+            class="drawer-header__close"
+            id="closeDrawer"
+            data-drawer-close
+          >
+            &times;
+          </button>
+        </div>
+        <div class="drawer-body">
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Default input"
+                    aria-label="default input example"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-footer">
+          <button class="btn btn-link" id="cancelDrawer" data-drawer-close>
+            Cancel
+          </button>
+          <button class="btn btn-primary" id="saveDrawer">Save</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/accordion.js"></script>
+  <script src="js/drawer.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/portfolio.js"></script>
+</html>
