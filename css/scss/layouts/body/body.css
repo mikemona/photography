@@ -4,14 +4,19 @@
   flex-direction: column;
   align-content: flex-start;
   gap: 24px;
-  padding: 16px;
+  padding: 16px 0;
   width: 100vw;
-  margin: 100px 0;
+  margin: 100px 0 24px;
   align-items: center;
 }
 .body__header {
   width: 60%;
+  padding: 16px;
   text-align: center;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .body__header-title {
   font-family: "Mallorga", serif;
@@ -83,4 +88,37 @@
 .body__form-actions-buttons {
   display: flex;
   gap: 8px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .body {
+    grid-area: body;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 24px;
+    padding: 16px 0;
+    width: 100vw;
+    margin: 100px 0 24px;
+    align-items: center;
+  }
+  .body__header {
+    width: 100%;
+    height: unset;
+    padding: 16px;
+    text-align: center;
+  }
+  .body__header-title {
+    font-family: "Mallorga", serif;
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .body__header-description {
+    color: var(--text-dark);
+    font-size: 16px;
+  }
+  .body__header-description a {
+    color: var(--text-dark);
+  }
 }/*# sourceMappingURL=body.css.map */

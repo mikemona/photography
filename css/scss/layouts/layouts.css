@@ -7,6 +7,7 @@
 @import "./section/section.css";
 @import "./profile/profile.css";
 @import "./portfolio/portfolio.css";
+@import "./footer/footer.css";
 .row {
   display: flex;
   flex-direction: row;

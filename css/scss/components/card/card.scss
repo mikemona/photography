@@ -1,24 +1,30 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding: 16px;
   background-color: var(--primary-ghost);
   color: var(--text-white);
-  border-radius: var(--border-radius);
-  height: 120px;
   width: 100%;
+  padding: 16px;
   flex: 0 0 auto;
 
-  &-title {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text-white);
-    margin-bottom: 8px;
-  }
+  &__content {
+    &-number {
+      font-family: "Mallorga", serif;
+      font-style: italic;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent);
+    }
 
-  &-description {
-    font-size: 12px;
-    color: var(--text-info);
+    &-title {
+      font-family: "Mallorga", serif;
+      font-size: 32px; /* Adjust headline size */
+      margin-bottom: 8px;
+    }
+
+    &-description {
+      font-size: 16px;
+    }
   }
 
   &--sm {
@@ -33,78 +39,9 @@
     height: 120px;
   }
 
-  &-song {
-    position: fixed;
-    bottom: 70px; /* Adjust based on your nav height */
-    left: 0;
-    right: 0;
-    background: var(--dark);
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: var(--border-radius);
-    transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 1000;
-    padding: 8px 8px 0;
-    margin: 0 8px;
-
-    &__content {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    &__image {
-      width: 50px;
-      height: 50px;
-      border-radius: var(--border-radius);
-      img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        border-radius: var(--border-radius);
-      }
-    }
-
-    &__details {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      width: 100%;
-    }
-
-    &__title {
-      font-size: 14px;
-      color: var(--text-white);
-      font-weight: bold;
-      margin: 0;
-    }
-
-    &__subtitle {
-      font-size: 12px;
-      color: var(--text-info);
-      margin: 0;
-    }
-
-    &__progress {
-      &-container {
-        position: relative;
-        height: 2px;
-        background: var(--bg-overlay);
-        border-radius: 2px;
-        overflow: hidden;
-        margin-top: 8px;
-      }
-
-      &-bar {
-        height: 100%;
-        width: 0;
-        background: var(--primary);
-        transition: width 0.3s ease;
-      }
-    }
-
-    &.visible {
-      transform: translateY(0);
-    }
+  &--info {
+    padding: 0px;
+    background-color: transparent;
+    color: var(--text-dark);
   }
 }

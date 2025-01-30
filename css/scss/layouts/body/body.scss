@@ -4,15 +4,20 @@
   flex-direction: column;
   align-content: flex-start;
   gap: 24px;
-  padding: 16px;
+  padding: 16px 0;
   width: 100vw;
   // height: 100vh;
-  margin: 100px 0;
+  margin: 100px 0 24px;
   align-items: center;
 
   &__header {
     width: 60%;
+    padding: 16px;
     text-align: center;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &-title {
       font-family: "Mallorga", serif;
@@ -97,6 +102,43 @@
       &-buttons {
         display: flex;
         gap: 8px;
+      }
+    }
+  }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .body {
+    grid-area: body;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 24px;
+    padding: 16px 0;
+    width: 100vw;
+    margin: 100px 0 24px;
+    align-items: center;
+
+    &__header {
+      width: 100%;
+      height: unset;
+      padding: 16px;
+      text-align: center;
+
+      &-title {
+        font-family: "Mallorga", serif;
+        font-size: 32px;
+        margin-bottom: 16px;
+      }
+
+      &-description {
+        color: var(--text-dark);
+        font-size: 16px;
+
+        a {
+          color: var(--text-dark);
+        }
       }
     }
   }

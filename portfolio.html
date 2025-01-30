@@ -13,13 +13,11 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.0.0-beta.4/dist/tesseract.min.js"></script>
 
-    <title>Ingredient Checker</title>
+    <title>Mike Mona Photography - Portfolio</title>
   </head>
   <body class="">
     <main class="main">
-      <header class="header">
-        <div class="nav-container" id="contact"></div>
-      </header>
+      <div class="nav-container" id="portfolio"></div>
       <div class="body">
         <div class="body__header">
           <div class="body__header-title">
@@ -36,97 +34,48 @@
           </div>
         </div>
 
-        <!-- <div class="section">
-          <div class="section__header">
-            <div class="section__header-title">Genres</div>
-          </div>
-          <div class="section__content-scrollable">
-            <div class="card">
-              <div class="card-title">Instrumentals</div>
-            </div>
-            <div class="card">
-              <div class="card-title">Hip-Hop</div>
-            </div>
-            <div class="card">
-              <div class="card-title">Jazz & Soul</div>
-            </div>
-          </div>
-        </div> -->
+        <div class="section-gallery">
+          <div class="portfolio-gallery"></div>
+        </div>
 
-        <div class="section">
-          <div class="section__header">
-            <div class="section__header-title">Genres</div>
-          </div>
-          <div class="section__content-grid">
-            <div class="card">
-              <div class="card-title">Instrumentals</div>
+        <divs
+          class="section-banner"
+          style="background-image: url(img/portfolio/Pybus-3.jpg)"
+        >
+          <div class="section-banner__content">
+            <div class="section-banner__content-title">
+              Ready to create something <em>beautiful</em> ?
             </div>
-            <div class="card">
-              <div class="card-title">Hip-Hop</div>
-            </div>
-            <div class="card">
-              <div class="card-title">Jazz & Soul</div>
-            </div>
+            <a href="contact.html" class="btn btn-outline-white">Get started</a>
           </div>
         </div>
 
-        <div class="portfolio-gallery"></div>
+        <div class="section-testimonial">
+          <div class="section-testimonial__quote">
+            "This is a great quote about how good I am"
+          </div>
 
-        <!-- <div class="accordion-item">
-          <div role="button" class="accordion-item__header">
-            <div class="accordion-item__header-title">Section 1</div>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div class="accordion-item__content">
-            <p>Content for section 1.</p>
-          </div>
-        </div> -->
-
-        <!-- <div class="accordion-item">
-          <div role="button" class="accordion-item__header">
-            <div class="accordion-item__header-title">
-              Section 2 Has a Much Longer Title
-            </div>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div class="accordion-item__content">
-            <p>Content for section 1.</p>
-          </div>
-        </div> -->
+          <div class="section-testimonial__quote-client">~ Steve + Katie</div>
+        </div>
       </div>
+
+      <div id="footer"></div>
     </main>
-    <div class="drawer-overlay" id="navDrawer">
-      <div class="drawer drawer--nav" id="drawer">
-        <div class="drawer-header">
-          <a href="profile.html" class="drawer-header__profile">
-            <div class="drawer-header__img">
-              <img src="/img/person5.jpg" alt="Person" />
-            </div>
-            <div class="drawer-header__title">
-              Drawer 1
-              <div class="drawer-header__description">124</div>
-            </div>
-          </a>
-          <button class="drawer-header__close" data-drawer-close>
-            &times;
-          </button>
-        </div>
-        <div class="drawer-body">
-          <div class="menu">
-            <a href="plans.html" class="menu-item">Plans</a>
-            <a href="settings.html" class="menu-item">Settings</a>
-            <div class="divider"></div>
-            <a href="login.html" class="menu-item">Log Out</a>
-          </div>
-        </div>
-        <div class="drawer-footer">
-          <button class="btn btn-link" id="cancelDrawer" data-drawer-close>
-            Cancel
-          </button>
-          <button class="btn btn-primary" id="saveDrawer">Save</button>
-        </div>
+    <div class="modal-image" id="imageModal">
+      <button class="modal-close" id="modalClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="" />
       </div>
+      <button class="arrow left-arrow" id="leftArrow">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="arrow right-arrow" id="rightArrow">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
     </div>
+
     <div class="drawer-overlay" id="drawer1">
       <div class="drawer" id="drawer">
         <div class="drawer-header">
@@ -270,5 +219,6 @@
   <script src="js/accordion.js"></script>
   <script src="js/drawer.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
   <script src="js/portfolio.js"></script>
 </html>
