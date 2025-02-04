@@ -6,6 +6,8 @@
 /* 25% darker */
 /* 10% lighter */
 /* 10% darker */
+/* 10% lighter */
+/* 10% darker */
 :root {
   --text-dark: #232426;
   --text-dark-placeholder: #232426bf;
@@ -14,6 +16,7 @@
   --text-white-placeholder: #9ba4c7;
   --border: #3d4459;
   --white: #ffffff;
+  --white-hover: #ffffff80;
   --trans-white: #ffffff40;
   --trans-dark: #23242620;
   --off-white: #dfdedb;
@@ -25,7 +28,7 @@
   --bg-overlay: #0b0f16bf;
   --bg-light: #ffffff;
   --bg-light-overlay: #ffffffbf;
-  --focus-shadow: 0 0 0 4px var(--primary-ghost);
+  --focus-shadow: 0 0 0 4px var(--trans-dark);
   --box-shadow: 0px 6px 12px #00000050;
   --gradient1: linear-gradient(var(--bg-dark), var(--dark2));
   --primary: #48554b;
@@ -34,6 +37,9 @@
   --accent: #7c99b2;
   --accent-hover: #9cb2c5; /* 25% lighter */
   --accent-focus: #5d809e; /* 25% darker */
+  --tan: #dfdedb;
+  --tan-hover: #f7f7f6; /* 10% lighter */
+  --tan-focus: #c7c5c0; /* 10% darker */
   --primary-ghost: #3d4459;
   --primary-ghost-hover: #656b7d;
   --primary-ghost-focus: #2b2f3f;

@@ -23,19 +23,19 @@ document.addEventListener("DOMContentLoaded", function () {
       images = data.images;
 
       images.forEach((image, index) => {
-        const imgWrapper = document.createElement("div"); // Create the wrapper div
-        imgWrapper.classList.add("portfolio-gallery__img"); // Add the wrapper class
+        const imgWrapper = document.createElement("div");
+        imgWrapper.classList.add("portfolio-gallery__img");
 
         const img = document.createElement("img");
         img.src = image.src;
         img.alt = image.alt;
         img.setAttribute("data-category", image.category);
-        img.setAttribute("data-index", index); // Store the index for navigation
+        img.setAttribute("data-index", index);
+        img.setAttribute("loading", image.loading || "lazy"); // Apply lazy loading
 
-        imgWrapper.appendChild(img); // Append the image to the wrapper
-        gallery.appendChild(imgWrapper); // Append the wrapper to the gallery
+        imgWrapper.appendChild(img);
+        gallery.appendChild(imgWrapper);
 
-        // Open modal when an image is clicked
         img.addEventListener("click", () => {
           openModal(index);
         });
@@ -55,9 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
               filter === "all" ||
               img.getAttribute("data-category") === filter
             ) {
-              wrapper.style.display = ""; // Show the wrapper
+              wrapper.style.display = "";
             } else {
-              wrapper.style.display = "none"; // Hide the wrapper
+              wrapper.style.display = "none";
             }
           });
         });
@@ -80,14 +80,14 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.classList.remove("open");
   }
 
-  // Show the previous image
+  // Show previous image
   function showPreviousImage() {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     modalImage.src = images[currentIndex].src;
     modalImage.alt = images[currentIndex].alt;
   }
 
-  // Show the next image
+  // Show next image
   function showNextImage() {
     currentIndex = (currentIndex + 1) % images.length;
     modalImage.src = images[currentIndex].src;
@@ -99,14 +99,12 @@ document.addEventListener("DOMContentLoaded", function () {
   leftArrow.addEventListener("click", showPreviousImage);
   rightArrow.addEventListener("click", showNextImage);
 
-  // Close modal on outside click
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
       closeModal();
     }
   });
 
-  // Close modal with the Escape key
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && modal.classList.contains("open")) {
       closeModal();

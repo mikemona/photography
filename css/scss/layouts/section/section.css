@@ -39,13 +39,26 @@
   width: 475px;
   height: 100%;
 }
-.section__content-grid {
+.section__content-two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   padding: 0 16px;
 }
-.section__content-grid .card-title {
+.section__content-two-col .card-title {
+  font-size: 14px;
+}
+.section__content-three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+  padding: 0 16px;
+  justify-items: center;
+}
+.section__content-three-col .card--info {
+  max-width: 350px;
+}
+.section__content-three-col .card-title {
   font-size: 14px;
 }
 .section-gallery {
@@ -79,6 +92,7 @@
   color: #fff; /* White text for contrast */
   text-align: center; /* Center the text */
   display: flex;
+  gap: 24px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -86,8 +100,12 @@
 }
 .section-hero__content-title {
   font-family: "Mallorga", serif;
-  font-size: 32px; /* Adjust headline size */
-  margin-bottom: 24px;
+  font-size: 48px; /* Adjust headline size */
+  max-width: 1200px;
+}
+.section-hero__content-description {
+  font-size: 16px;
+  max-width: 1200px;
 }
 .section-hero__content p {
   font-size: 14px;
@@ -124,13 +142,19 @@
   justify-content: center;
   height: 100%;
 }
+.section-banner__content-subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
 .section-banner__content-title {
   font-family: "Mallorga", serif;
-  font-size: 32px; /* Adjust headline size */
+  font-size: 48px; /* Adjust headline size */
   margin-bottom: 24px;
 }
-.section-banner__content p {
-  font-size: 14px;
+.section-banner__content__description {
+  font-size: 16px;
+  color: var(--text-dark);
 }
 .section-content {
   display: flex;
@@ -143,6 +167,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 800px;
   flex: 1;
 }
 .section-content__title {
@@ -167,6 +192,45 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+.section-content--package .section-content__text {
+  display: grid;
+  grid-template-columns: "1fr 1fr";
+  gap: 24px;
+  max-width: 800px;
+  flex: 1;
+  grid-template-areas: "subtitle subtitle" "title title" "description details" "cta cta";
+}
+.section-content--package .section-content__title {
+  grid-area: title;
+  font-family: "Mallorga", serif;
+  font-size: 32px; /* Adjust headline size */
+  margin-bottom: 8px;
+}
+.section-content--package .section-content__subtitle {
+  grid-area: subtitle;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+}
+.section-content--package .section-content__description {
+  grid-area: description;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+.section-content--package .section-content__details {
+  grid-area: details;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+.section-content--package .section-content__cta {
+  grid-area: cta;
+  width: 100%;
+}
+.section-content--package .section-content__cta .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .section-content__image {
   flex: 1;
   text-align: center;
@@ -188,6 +252,10 @@
   gap: 24px;
   flex: 1;
   padding: 32px 16px;
+}
+.section-content--full .section-content__text-form {
+  width: 100%;
+  max-width: 600px;
 }
 .section-content--full .section-content__title {
   font-family: "Mallorga", serif;
@@ -230,6 +298,14 @@
   height: auto;
   max-height: 1000px;
 }
+.section-content--full .section-content__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+  padding: 32px 16px;
+}
 .section-testimonial {
   width: 100%; /* Full width of the page */
   padding: 60px 16px;
@@ -244,18 +320,39 @@
 }
 .section-testimonial__quote {
   color: var(--text-dark); /* White text for contrast */
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1200px;
+}
+.section-testimonial__quote-title {
   font-family: "Mallorga", serif;
   font-size: 32px; /* Adjust headline size */
 }
+.section-testimonial__quote-body {
+  font-size: 18px;
+}
 .section-testimonial__quote-client {
   font-size: 16px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
+  .section-banner__content-title {
+    font-family: "Mallorga", serif;
+    font-size: 32px; /* Adjust headline size */
+    margin-bottom: 24px;
+  }
+  .section-banner__content__description {
+    font-size: 14px;
+  }
   .section-hero {
     height: 600px;
     background-position: top right -250px; /* Center the image */
+  }
+  .section-hero__content-title {
+    font-size: 32px;
   }
   .section__content-scrollable {
     gap: 24px;
@@ -267,6 +364,13 @@
     font-size: 24px;
   }
   .section__content-scrollable .card__content-description {
+    font-size: 14px;
+  }
+  .section__content-three-col {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section__content-three-col .card-title {
     font-size: 14px;
   }
   .section-content {

@@ -10,7 +10,7 @@
 
 label {
   font-size: 12px;
-  color: var(--text-white);
+  color: var(--text-dark);
 }
 
 .required {
@@ -33,12 +33,10 @@ textarea {
   font-family: "Quicksand", sans-serif;
   width: 100%;
   min-height: 200px;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--dark);
   padding: 12px;
-  background-color: var(--primary-ghost);
-  color: var(--text-white);
-  scrollbar-width: thin; /* For Firefox */
+  border: none;
+  background-color: var(--white);
+  color: var(--text-dark);
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   scrollbar-color: var(--primary-ghost-focus) var(--primary-ghost-hover);
   outline: none;
@@ -104,13 +102,12 @@ textarea:focus-visible {
 
 .form-control {
   min-height: 40px;
-  border-radius: var(--border-radius);
-  padding: 0 8px;
+  padding: 8px;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   border: none;
-  background-color: var(--primary-ghost);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--text-dark);
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out, 0.2s ease-in-out;
 
   &::placeholder {
@@ -118,7 +115,7 @@ textarea:focus-visible {
   }
 
   &:hover {
-    background-color: var(--primary-ghost-hover);
+    background-color: var(--white-hover);
   }
 
   &:focus-visible {
@@ -130,11 +127,10 @@ textarea:focus-visible {
 
 .form-select {
   min-height: 40px;
-  border-radius: var(--border-radius);
-  padding: 0 8px;
+  padding: 8px;
   font-family: "Quicksand", sans-serif;
   border: none;
-  background-color: var(--primary);
+  background-color: var(--white);
   color: var(--text-dark);
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out, 0.2s ease-in-out;
 
@@ -143,7 +139,7 @@ textarea:focus-visible {
   }
 
   &:hover {
-    background-color: var(--primary-hover);
+    background-color: var(--white-hover);
   }
 
   &:focus-visible {
@@ -166,6 +162,19 @@ textarea:focus-visible {
 
   &.menu-open::after {
     transform: translateY(-50%) rotate(180deg); /* Rotate the icon when menu is open */
+  }
+}
+
+select:focus {
+  & > option {
+    background-color: var(--white);
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    &:checked {
+      background: var(--tan-focus) !important;
+      // color: var(--text-white);
+    }
   }
 }
 

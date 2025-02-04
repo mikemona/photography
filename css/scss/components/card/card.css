@@ -7,12 +7,24 @@
   padding: 16px;
   flex: 0 0 auto;
 }
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .card__content-number {
   font-family: "Mallorga", serif;
   font-style: italic;
   font-size: 14px;
   font-weight: 700;
   color: var(--accent);
+}
+.card__content-img {
+  flex: 1;
+}
+.card__content-img img {
+  max-width: 100%;
+  height: auto;
 }
 .card__content-title {
   font-family: "Mallorga", serif;

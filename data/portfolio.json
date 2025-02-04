@@ -3,112 +3,138 @@
     {
       "src": "../img/portfolio/SnowDay-1.jpg",
       "alt": "Sunset over the mountains",
-      "category": "landscape"
+      "category": "landscape",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/SnowDay-3.jpg",
       "alt": "A beautiful forest trail",
-      "category": "nature"
+      "category": "nature",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Pybus-1.jpg",
       "alt": "Close up portrait",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Pybus-3.jpg",
       "alt": "City skyline at night",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Pybus-4.jpg",
       "alt": "City skyline at night",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Pybus-6.jpg",
       "alt": "A beautiful forest trail",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Pybus-9.jpg",
       "alt": "A beautiful forest trail",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Pybus-12.jpg",
       "alt": "City skyline at night",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Newborn-1.jpg",
       "alt": "City skyline at night",
-      "category": "newborn"
+      "category": "newborn",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Sav-14.jpg",
       "alt": "Snow-covered cabin in winter",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Sav-21.jpg",
       "alt": "Snow-covered cabin in winter",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Sav-24.jpg",
       "alt": "Close up portrait",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/Sav-33.jpg",
       "alt": "Snow-covered cabin in winter",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/BairWedding-23.jpg",
       "alt": "City skyline at night",
-      "category": "wedding"
+      "category": "wedding",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/BairWedding-50.jpg",
       "alt": "City skyline at night",
-      "category": "wedding"
+      "category": "wedding",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/BairWedding-52.jpg",
       "alt": "A beautiful forest trail",
-      "category": "wedding"
+      "category": "wedding",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/BairWedding-68.jpg",
       "alt": "Snow-covered cabin in winter",
-      "category": "wedding"
+      "category": "wedding",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/AmyJoey-1.jpg",
       "alt": "Snow-covered cabin in winter",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/AmyJoey-2.jpg",
       "alt": "Snow-covered cabin in winter",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/AmyJoey-3.jpg",
       "alt": "Snow-covered cabin in winter",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/AmyJoey-4.jpg",
       "alt": "Snow-covered cabin in winter",
-      "category": "portrait"
+      "category": "portrait",
+      "loading": "lazy"
     },
     {
       "src": "../img/portfolio/AmyJoey-5.jpg",
       "alt": "Snow-covered cabin in winter",
       "category": "portrait"
+    },
+    {
+      "src": "../img/portfolio/Lauren-3.jpg",
+      "alt": "Close up wedding rings",
+      "category": "wedding"
     }
   ]
 }

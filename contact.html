@@ -11,15 +11,14 @@
       src="https://kit.fontawesome.com/3d4c699bd6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.0.0-beta.4/dist/tesseract.min.js"></script>
 
     <title>Mike Mona Photography - Contact</title>
   </head>
   <body class="">
     <main class="main">
-      <header class="header">
-        <div class="nav-container" id="contact"></div>
-      </header>
+      <div class="nav-container" id="contact"></div>
       <div class="body">
         <div class="body__header">
           <div class="body__header-title">
@@ -33,14 +32,204 @@
               within 48 hours to confirm availability. If you don’t see a reply
               from us by then, please check your spam folder or email us
               directly at:
-              <a href="mailto:mike@mikemonastudios.com"
-                >mike@mikemonastudios.com</a
+              <a href="mailto:mike@mikemona.com" class="btn btn-link"
+                >mike@mikemona.com</a
               >
             </p>
             <p>
               We look forward to hearing from you and creating something
               unforgettable together.
             </p>
+          </div>
+        </div>
+
+        <div class="section-content section-content--full">
+          <div class="section-content__text">
+            <div id="mc_embed_shell" class="section-content__text-form">
+              <div id="mc_embed_signup">
+                <form
+                  action="https://mikemonastudios.us13.list-manage.com/subscribe/post?u=c6997736bb09a7eb064864ed8&amp;id=72d2ffe5de&amp;f_id=00e090ebf0"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="validate"
+                  target="_self"
+                  novalidate=""
+                >
+                  <div id="mc_embed_signup_scroll">
+                    <!-- <div class="indicates-required">
+                      <span class="asterisk">*</span> indicates required
+                    </div> -->
+                    <div class="form-row">
+                      <div class="mc-field-group form-element">
+                        <label for="mce-FNAME"
+                          >First Name <span class="asterisk">*</span></label
+                        ><input
+                          type="text"
+                          name="FNAME"
+                          class="required text form-control"
+                          id="mce-FNAME"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                      <div class="mc-field-group form-element">
+                        <label for="mce-LNAME"
+                          >Last Name <span class="asterisk">*</span></label
+                        ><input
+                          type="text"
+                          name="LNAME"
+                          class="required text form-control"
+                          id="mce-LNAME"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="mc-field-group form-element">
+                        <label for="mce-EMAIL"
+                          >Email Address <span class="asterisk">*</span></label
+                        ><input
+                          type="email"
+                          name="EMAIL"
+                          class="required email form-control"
+                          id="mce-EMAIL"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                      <div class="mc-field-group form-element">
+                        <label for="mce-PHONE"
+                          >Phone Number <span class="asterisk">*</span></label
+                        ><input
+                          type="text"
+                          name="PHONE"
+                          class="REQ_CSS form-control"
+                          id="mce-PHONE"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div class="mc-field-group form-element">
+                      <label for="mce-TYPE"
+                        >Session Type <span class="asterisk">*</span></label
+                      ><select
+                        name="TYPE"
+                        class="required form-select"
+                        id="mce-TYPE"
+                      >
+                        <option value=""></option>
+                        <option value="Couple">Couple</option>
+                        <option value="Engagement">Engagement</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Family">Family</option>
+                        <option value="Portrait">Portrait</option>
+                      </select>
+                    </div>
+
+                    <div class="form-row" id="partnerName">
+                      <div class="mc-field-group form-element">
+                        <label for="mce-PFIRST">Partner's First Name </label
+                        ><input
+                          type="text"
+                          name="PFIRST"
+                          class="text form-control"
+                          id="mce-PFIRST"
+                          value=""
+                        />
+                      </div>
+                      <div class="mc-field-group form-element">
+                        <label for="mce-PLAST">Partner's Last Name </label
+                        ><input
+                          type="text"
+                          name="PLAST"
+                          class="text form-control"
+                          id="mce-PLAST"
+                          value=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="mc-field-group form-element">
+                      <label for="mce-VENUE">Venue/Location </label
+                      ><input
+                        type="text"
+                        name="VENUE"
+                        class="text form-control"
+                        id="mce-VENUE"
+                        value=""
+                      />
+                    </div>
+                    <div class="mc-field-group form-element">
+                      <label for="mce-MMERGE10"
+                        >Tell me about yourselves!
+                      </label>
+                      <textarea
+                        rows="5"
+                        name="ABOUT"
+                        class="text form-control"
+                        id="mce-ABOUT"
+                        value=""
+                      ></textarea>
+                    </div>
+                    <div class="mc-field-group form-element">
+                      <label for="mce-QUESTIONS"
+                        >Do you have any questions for me?
+                      </label>
+                      <textarea
+                        id="mce-QUESTIONS"
+                        name="w3review"
+                        rows="5"
+                        name="QUESTIONS"
+                        class="text form-control"
+                        value=""
+                      ></textarea>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div
+                        class="response"
+                        id="mce-error-response"
+                        style="display: none"
+                      ></div>
+                      <div
+                        class="response"
+                        id="mce-success-response"
+                        style="display: none"
+                      ></div>
+                    </div>
+                    <div
+                      aria-hidden="true"
+                      style="position: absolute; left: -5000px"
+                    >
+                      <input
+                        type="text"
+                        name="b_c6997736bb09a7eb064864ed8_72d2ffe5de"
+                        tabindex="-1"
+                        value=""
+                      />
+                    </div>
+
+                    <div class="clear form-btn">
+                      <input
+                        type="submit"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        class="btn btn-primary"
+                        value="Submit"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="section-content__image">
+            <img
+              src="img/portfolio/KatieBen-5.jpg"
+              alt="Descriptive alt text"
+            />
           </div>
         </div>
 
@@ -109,79 +298,60 @@
           </div>
         </div>
 
-        <div class="accordion-item">
-          <div role="button" class="accordion-item__header">
-            <div class="accordion-item__header-title">Section 1</div>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div class="accordion-item__content">
-            <p>Content for section 1.</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div role="button" class="accordion-item__header">
-            <div class="accordion-item__header-title">
-              Section 2 Has a Much Longer Title
+        <div class="accordion">
+          <div class="accordion-item">
+            <div role="button" class="accordion-item__header">
+              <div class="accordion-item__header-title">Section 1</div>
+              <i class="fa-solid fa-angle-down"></i>
             </div>
-            <i class="fa-solid fa-angle-down"></i>
+            <div class="accordion-item__content">
+              <p>Content for section 1.</p>
+            </div>
           </div>
-          <div class="accordion-item__content">
-            <p>Content for section 1.</p>
+
+          <div class="accordion-item">
+            <div role="button" class="accordion-item__header">
+              <div class="accordion-item__header-title">
+                Section 2 Has a Much Longer Title
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="accordion-item__content">
+              <p>Content for section 1.</p>
+            </div>
           </div>
         </div>
 
-        <table class="table">
-          <tr>
-            <td class="table__image">
-              <img src="./img/covers/cover-1.jpg" alt="Album Art" />
-            </td>
-            <td class="table__title">
-              <div class="table__title-content">
-                <div class="table__title-title">Song Title</div>
-                <div class="table__title-subtitle">Artist Name</div>
-              </div>
-            </td>
-            <td class="table__action">
-              <button class="btn btn-link">
-                <i class="fa-solid fa-ellipsis"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td class="table__image">
-              <img src="./img/covers/cover-2.jpg" alt="Album Art" />
-            </td>
-            <td class="table__title">
-              <div class="table__title-content">
-                <div class="table__title-title">Song Title</div>
-                <div class="table__title-subtitle">Artist Name</div>
-              </div>
-            </td>
-            <td class="table__action">
-              <button class="btn btn-link">
-                <i class="fa-solid fa-ellipsis"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td class="table__image">
-              <img src="./img/covers/cover-3.jpg" alt="Album Art" />
-            </td>
-            <td class="table__title">
-              <div class="table__title-content">
-                <div class="table__title-title">Song Title</div>
-                <div class="table__title-subtitle">Artist Name</div>
-              </div>
-            </td>
-            <td class="table__action">
-              <button class="btn btn-link">
-                <i class="fa-solid fa-ellipsis"></i>
-              </button>
-            </td>
-          </tr>
-        </table>
+        <div
+          class="section-banner"
+          style="background-image: url(img/portfolio/Pybus-3.jpg)"
+        >
+          <div class="section-banner__content">
+            <div class="section-banner__content-title">
+              Ready to create something <em>beautiful</em> ?
+            </div>
+            <a href="contact.html" class="btn btn-outline-white">Get started</a>
+          </div>
+        </div>
+
+        <div class="section-testimonial">
+          <div class="section-testimonial__quote">
+            <div class="section-testimonial__quote-title">
+              Mike is such a talented photographer
+            </div>
+            <div class="section-testimonial__quote-body">
+              "He gave wonderful direction when needed but was not over bearing.
+              He also knows how to use natural light to his advantage for such a
+              fabulous outcome in the photo. We really enjoyed working with Mike
+              so much and we would recommend him to anyone for any type of
+              shoot."
+            </div>
+
+            <div class="section-testimonial__quote-client">~ Lauren</div>
+          </div>
+        </div>
       </div>
+      <div id="footer"></div>
     </main>
     <div class="drawer-overlay" id="navDrawer">
       <div class="drawer drawer--nav" id="drawer">
@@ -355,9 +525,30 @@
     </div>
   </body>
 
-  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.0.0/dist/tesseract.min.js"></script>
-  <script src="js/anyalyzer.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#partnerName").hide(); // Ensure it's hidden on page load
+
+      $("#mce-TYPE").change(function () {
+        // Get the selected value and convert it to lowercase for consistency
+        const selectedValue = $(this).val().toLowerCase();
+
+        // Check if the selected value is one of the options where partnerName should show
+        if (
+          selectedValue === "couple" ||
+          selectedValue === "engagement" ||
+          selectedValue === "wedding"
+        ) {
+          $("#partnerName").show();
+        } else {
+          $("#partnerName").hide();
+        }
+      });
+    });
+  </script>
+
   <script src="js/accordion.js"></script>
   <script src="js/drawer.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
 </html>
