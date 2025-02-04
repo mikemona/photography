@@ -8,6 +8,7 @@
 @import "./profile/profile.css";
 @import "./portfolio/portfolio.css";
 @import "./footer/footer.css";
+@import "./form/form.css";
 .row {
   display: flex;
   flex-direction: row;

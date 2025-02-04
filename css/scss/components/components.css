@@ -5,7 +5,7 @@
 @import "./inputs/inputs.css";
 @import "./ingredient/_ingredient.css";
 @import "./result/_result.css";
-@import "./accordion/_accordion.css";
+@import "./accordion/accordion.css";
 @import "./image/_image.css";
 @import "./progress/_progress.css";
 @import "./settings/settings.css";

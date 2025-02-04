@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .body__header-title {
   font-family: "Mallorga", serif;
@@ -24,11 +25,12 @@
   margin-bottom: 16px;
 }
 .body__header-description {
-  color: var(--text-dark);
   font-size: 22px;
 }
-.body__header-description a {
-  color: var(--text-dark);
+.body__header-cta {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 16px;
 }
 .body__body {
   display: flex;
@@ -118,7 +120,8 @@
     color: var(--text-dark);
     font-size: 16px;
   }
-  .body__header-description a {
-    color: var(--text-dark);
+  .body__header-cta {
+    width: 100%;
+    margin-top: 16px;
   }
 }/*# sourceMappingURL=body.css.map */

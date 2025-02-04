@@ -1,0 +1,25 @@
+.form {
+  &-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    .form-element {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    &-row {
+      display: flex;
+      flex-direction: column;
+      gap: unset;
+    }
+
+    &-btn input {
+      width: 100%;
+    }
+  }
+}

@@ -8,12 +8,26 @@
   flex: 0 0 auto;
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
     &-number {
       font-family: "Mallorga", serif;
       font-style: italic;
       font-size: 14px;
       font-weight: 700;
       color: var(--accent);
+    }
+
+    &-img {
+      flex: 1;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        // max-height: 500px;
+      }
     }
 
     &-title {
