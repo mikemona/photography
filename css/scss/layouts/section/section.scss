@@ -80,11 +80,11 @@
   &-hero {
     position: relative; /* Allows positioning of child elements */
     width: 100%; /* Full width of the page */
-    height: 800px;
+    height: 500px;
     padding: 16px;
     background-size: cover; /* Make sure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    background-position: 50% 80%; /* Center the image */
+    // background-attachment: fixed;
     background-repeat: no-repeat; /* Prevent repeating of the image */
     overflow: hidden; /* Ensures no child element overflows */
 
@@ -105,20 +105,25 @@
       color: #fff; /* White text for contrast */
       text-align: center; /* Center the text */
       display: flex;
-      gap: 24px;
+      gap: 8px;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       height: 100%;
 
       &-title {
         font-family: "Mallorga", serif;
-        font-size: 48px; /* Adjust headline size */
+        font-size: 22px; /* Adjust headline size */
+        max-width: 1200px;
+      }
+
+      &-scroll {
+        font-size: 14px;
         max-width: 1200px;
       }
 
       &-description {
-        font-size: 16px;
+        font-size: 14px;
         max-width: 1200px;
       }
       p {
@@ -179,6 +184,47 @@
     }
   }
 
+  &-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    align-items: center;
+    padding: 32px 16px;
+
+    &__services {
+      font-family: "Mallorga", serif;
+      font-size: 128px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover .section-offer__services-title {
+        filter: blur(5px);
+      }
+
+      &-title {
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          filter: blur(0) !important;
+          color: var(--primary);
+        }
+      }
+    }
+
+    &__description {
+      font-size: 16px;
+      color: var(--text-dark);
+    }
+
+    &__subtitle {
+      font-family: "Quicksand", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
   &-content {
     display: flex;
     align-items: center;
@@ -190,7 +236,7 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
-      // max-width: 800px;
+      max-width: 600px;
       flex: 1;
     }
 
@@ -230,6 +276,19 @@
       }
     }
 
+    &--vert {
+      flex-direction: column;
+
+      .section-content__text {
+        text-align: center;
+      }
+
+      .section-content__cta {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
     &--package {
       .section-content {
         display: flex;
@@ -253,6 +312,7 @@
         &__title {
           grid-area: title;
           font-family: "Mallorga", serif;
+          color: var(--primary);
           font-size: 48px; /* Adjust headline size */
           margin-bottom: 8px;
         }
@@ -275,8 +335,23 @@
         &__details {
           font-family: "Courier New", Courier, monospace;
           grid-area: details;
-          font-size: 16px;
+          font-size: 14px;
           color: var(--text-dark-placeholder);
+          text-align: left;
+
+          &-price {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary);
+          }
+          ul {
+            list-style: square;
+            padding-left: 24px;
+            li {
+              margin-bottom: 10px;
+            }
+          }
         }
 
         &__cta {
@@ -313,6 +388,7 @@
           gap: 24px;
           flex: 1;
           padding: 32px;
+          max-width: unset;
 
           &-form {
             width: 100%;
@@ -436,8 +512,14 @@
       background-position: top right -250px; /* Center the image */
 
       &__content {
+        justify-content: flex-start;
         &-title {
-          font-size: 32px;
+          font-size: 22px;
+        }
+
+        &-scroll {
+          font-size: 14px;
+          max-width: 1200px;
         }
       }
     }
@@ -622,6 +704,48 @@
             }
           }
         }
+      }
+    }
+
+    &-offer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 8px;
+      align-items: center;
+      padding: 32px 16px;
+      z-index: 99;
+
+      &__services {
+        font-family: "Mallorga", serif;
+        font-size: 40px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover .section-offer__services-title {
+          filter: blur(3px);
+        }
+
+        &-title {
+          z-index: 999;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            filter: blur(0) !important;
+            color: var(--primary);
+          }
+        }
+      }
+
+      &__description {
+        font-size: 16px;
+        color: var(--text-dark);
+      }
+
+      &__subtitle {
+        font-family: "Quicksand", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
       }
     }
   }

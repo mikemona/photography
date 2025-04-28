@@ -64,6 +64,10 @@ div {
   min-height: 0;
 }
 
+ul ol {
+  list-style: square;
+}
+
 .visually-hidden {
   visibility: hidden;
 }

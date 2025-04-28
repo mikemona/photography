@@ -5,11 +5,11 @@ function loadNav() {
   const desktopNavHTML = `
     <div class="nav">
       <a href="home.html" class="btn nav-link" data-name="home">Home</a>
-      <a href="portfolio.html" class="btn nav-link" data-name="portfolio">Portfolio</a>
-      <a href="details.html" class="btn nav-link" data-name="details">Details</a>
-      <a href="home.html" class="btn nav-link-title">Mike Mona</a>
       <a href="about.html" class="btn nav-link" data-name="about">About</a>
       <a href="information.html" class="btn nav-link" data-name="information">Information</a>
+      <a href="home.html" class="btn nav-link-title">Mike Mona</a>
+      <a href="portfolio.html" class="btn nav-link" data-name="portfolio">Portfolio</a>
+      <a href="investment.html" class="btn nav-link" data-name="investment">Investment</a>
       <a href="contact.html" class="btn nav-link" data-name="contact">Contact</a>
     </div>
     <button class="nav__toggle" id="openDrawer">☰</button>
@@ -21,10 +21,10 @@ function loadNav() {
         </div>
         <div class="drawer-body">
           <a href="home.html" class="btn nav-link" data-name="home">Home</a>
-          <a href="portfolio.html" class="btn nav-link" data-name="portfolio">Portfolio</a>
-          <a href="details.html" class="btn nav-link" data-name="details">Details</a>
           <a href="about.html" class="btn nav-link" data-name="about">About</a>
           <a href="information.html" class="btn nav-link" data-name="information">Information</a>
+          <a href="portfolio.html" class="btn nav-link" data-name="portfolio">Portfolio</a>
+          <a href="investment.html" class="btn nav-link" data-name="investment">Investment</a>
           <a href="contact.html" class="btn nav-link" data-name="contact">Contact</a>
         </div>
       </div>
@@ -45,10 +45,10 @@ function loadNav() {
         </div>
         <div class="drawer-body">
           <a href="home.html" class="btn nav-link" data-name="home">Home</a>
-          <a href="portfolio.html" class="btn nav-link" data-name="portfolio">Portfolio</a>
-          <a href="details.html" class="btn nav-link" data-name="details">Details</a>
           <a href="about.html" class="btn nav-link" data-name="about">About</a>
           <a href="information.html" class="btn nav-link" data-name="information">Information</a>
+          <a href="portfolio.html" class="btn nav-link" data-name="portfolio">Portfolio</a>
+          <a href="investment.html" class="btn nav-link" data-name="investment">Investment</a>
           <a href="contact.html" class="btn nav-link" data-name="contact">Contact</a>
         </div>
       </div>
